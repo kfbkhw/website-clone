@@ -1,3 +1,4 @@
 <h1>Netflix Website Clone Project</h1>
+<p>This project aims to clone Netflix South Korea's official website.</p><br>
 <h2>Landing Page</h2>
-<p><strong>Started on 8 November 2023</strong><br><br>Create Netflix landing page clone using HTML and CSS with the help of <a href="https://www.youtube.com/watch?v=Tgat3-prVv4">GreatStack</a> on YouTube. The design will be completely responsive for laptop and mobile devices.</p>
+<p><strong>Started on 9 November 2023</strong><br><br>Create Netflix landing page clone using HTML and CSS with the help of Chrome DevTools and <a href="https://www.youtube.com/watch?v=Tgat3-prVv4">GreatStack</a> on YouTube. The original website is <a href="https://www.netflix.com/kr-en/">Netflix South Korea's landing page</a>. The design is completely responsive for laptop and mobile devices.</p><br>
