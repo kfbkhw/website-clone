@@ -46,7 +46,7 @@ body {
 
 #title {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.85)), url(../images/title.png);
     background-size: cover;
     background-position: bottom;
@@ -108,7 +108,7 @@ body {
 }
 
 .title-header {
-    margin: 160px 70px;
+    margin: 200px 70px;
 }
 
 .title-header h1 {
@@ -124,7 +124,7 @@ body {
     margin-top: 16px;
 }
 
-.title-header h6 {
+.signup-text {
     font-family: 'Netflix Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
@@ -176,20 +176,16 @@ body {
 
 /* feature */
 
-#feature {
-    background-color: #000000;
-}
-
 .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 80px 160px;
+    padding: 90px 160px;
 }
 
 .col-text {
     flex-basis: 50%;
-    margin-bottom: 74px;
+    margin-bottom: 60px;
     text-align: left;
 }
 
@@ -219,5 +215,47 @@ body {
     display: block;
     width: 100%;
     height: 0.5rem;
+    margin-top: 10px;
     background-color: rgb(35, 35, 35);
+}
+
+
+
+/* faq */
+
+#faq {
+    padding: 30px;
+}
+
+#faq h2 {
+    font-family: 'Netflix Sans Black', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 560px;
+    margin: 20px 0 50px;
+}
+
+.faq-dropdown {
+    width: 80%;
+    height: 84px;
+    border: 0;
+    background-color: rgb(45, 45, 45);
+    color: #ffffff;
+    font-family: 'Netflix Sans Regular', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.signup-div {
+    margin: 50px 0 80px;
 }
