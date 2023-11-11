@@ -184,20 +184,13 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 60px 35px;
-}
-
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
+    padding: 80px 160px;
 }
 
 .col-text {
     flex-basis: 50%;
     margin-bottom: 74px;
+    text-align: left;
 }
 
 .col-text h2 {
@@ -219,14 +212,12 @@ body {
 }
 
 .col-img img {
-    width: 100%;
+    width: 85%;
 }
 
 .divider {
     display: block;
     width: 100%;
     height: 0.5rem;
-    position: absolute;
-    bottom: -0.5rem;
     background-color: rgb(35, 35, 35);
 }
