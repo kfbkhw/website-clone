@@ -184,12 +184,19 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 60px 28px;
+    padding: 60px 35px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
 }
 
 .col-text {
     flex-basis: 50%;
-    text-align: left;
     margin-bottom: 74px;
 }
 
@@ -208,7 +215,6 @@ body {
 
 .col-img {
     flex-basis: 50%;
-    text-align: right;
     margin-bottom: 20px;
 }
 
