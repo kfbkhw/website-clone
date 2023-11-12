@@ -212,7 +212,7 @@ body {
 /* faq */
 
 .faq-content {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 #faq h2 {
@@ -277,7 +277,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
-    width: 86%;
+    width: 90%;
     height: 120px;
 }
 
@@ -285,6 +285,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 150px;
 }
 
 .footer-col a {
@@ -326,7 +327,7 @@ a#hide {
     }
 
     #faq .faq-dropdown {
-        width: 100%;
+        width: 95%;
     }
 
     #footer {
@@ -389,6 +390,10 @@ a#hide {
         padding: 68px 4%;
     }
 
+    .alter-row {
+        flex-direction: column-reverse;
+    }
+
     .col-text {
         text-align: center;
     }
@@ -412,7 +417,6 @@ a#hide {
         width: 78%;
     }
 
-
     /* faq */
 
     #faq h2 {
@@ -421,13 +425,31 @@ a#hide {
         font-size: 2rem;
     }
 
+    .faq-column {
+        height: 470px;
+    }
+
+    .faq-dropdown {
+        font-size: 18px;
+        width: 93%;
+        height: 70px;
+    }
 
     /* footer */
 
     #footer {
-        text-align: left;
-        width: 90%;
-        margin: 68px auto;
+        width: 94%;
+        margin: 3% 3% 4%;
     }
 
+    .footer-table {
+        flex-wrap: wrap;
+        height: 260px;
+        padding-top: 6px;
+    }
+
+    .footer-col {
+        flex: 50%;
+        margin-top: 16px;
+    }
 }
