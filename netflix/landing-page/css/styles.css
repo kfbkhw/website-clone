@@ -35,11 +35,6 @@ body {
     src: url(netflix-sans-font/NetflixSans-Regular.otf);
 }
 
-@font-face {
-    font-family: Netflix Sans Light;
-    src: url(netflix-sans-font/NetflixSans-Light.otf);
-}
-
 
 
 /* title */
@@ -320,14 +315,14 @@ a#hide {
 
 /* media */
 
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 960px) and (max-width: 1279px) {
     #title .title-menu {
         display: flex;
         width: auto;
     }
 
     #feature .row {
-        padding: 90px 60px;
+        padding: 70px 40px;
     }
 
     #faq .faq-dropdown {
@@ -338,4 +333,101 @@ a#hide {
         width: auto;
         padding: 0 30px;
     }
+}
+
+@media screen and (max-width: 959px) {
+
+    /* title */
+
+    #title {
+        height: 70vh;
+        background-size: cover;
+    }
+
+    .title-menu {
+        width: 95%;
+        padding: 24px 0;
+    }
+
+    .logo-img {
+        width: 90px;
+    }
+
+    .menu-btn {
+        margin-right: 6px;
+    }
+
+    .title-header {
+        margin: 100px 0;
+    }
+
+    .title-header h1 {
+        font-family: 'Netflix Sans Bold', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .title-header h4 {
+        font-family: 'Netflix Sans Regular', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .signup-text {
+        font-family: 'Netflix Sans Regular', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 24px;
+    }
+
+    /* feature */
+
+    .row {
+        flex-direction: column;
+        padding: 68px 4%;
+    }
+
+    .col-text {
+        text-align: center;
+    }
+
+    .col-text h2 {
+        font-family: 'Netflix Sans Bold', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    .col-text h5 {
+        font-size: 18px;
+    }
+
+    .col-img {
+        margin-bottom: 10px;
+    }
+
+    .col-img img {
+        width: 78%;
+    }
+
+
+    /* faq */
+
+    #faq h2 {
+        font-family: 'Netflix Sans Bold', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+
+    /* footer */
+
+    #footer {
+        text-align: left;
+        width: 90%;
+        margin: 68px auto;
+    }
+
 }
