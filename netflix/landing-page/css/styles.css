@@ -61,13 +61,6 @@ body {
     padding: 24px;
 }
 
-@media screen and (max-width: 1279px) {
-    .title-menu {
-        display: flex;
-        width: auto;
-    }
-}
-
 .logo-img {
     width: 150px;
     padding-left: 10px;
@@ -223,7 +216,7 @@ body {
 
 /* faq */
 
-#faq {
+.faq-content {
     padding: 30px;
 }
 
@@ -254,8 +247,95 @@ body {
     font-size: 1.5rem;
     text-align: left;
     padding: 0 20px;
+    cursor: pointer;
+}
+
+.faq-dropdown:hover {
+    background-color: rgb(65, 65, 65);
 }
 
 .signup-div {
-    margin: 50px 0 80px;
+    margin: 50px 0 60px;
+}
+
+
+
+/* footer */
+
+#footer {
+    text-align: left;
+    width: 1040px;
+    margin: 68px auto;
+}
+
+#footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Netflix Sans Regular', sans-serif;
+    font-weight: 400;
+}
+
+.footer-heading {
+    font-size: 1rem;
+}
+
+.footer-table {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    width: 86%;
+    height: 120px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-col a {
+    font-size: 14px;
+}
+
+a#hide {
+    visibility: hidden;
+}
+
+.footer-name {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Netflix Sans Regular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 24px;
+}
+
+.footer-info {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Netflix Sans Regular', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+
+
+/* media */
+
+@media screen and (max-width: 1279px) {
+    #title .title-menu {
+        display: flex;
+        width: auto;
+    }
+
+    #feature .row {
+        padding: 90px 60px;
+    }
+
+    #faq .faq-dropdown {
+        width: 100%;
+    }
+
+    #footer {
+        width: auto;
+        padding: 0 30px;
+    }
 }
