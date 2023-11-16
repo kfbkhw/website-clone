@@ -1,0 +1,330 @@
+@font-face {
+    font-family: "SF Pro Display Regular";
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: "SF Pro Display Semibold";
+    src: url(../fonts/SF-Pro-Display-Semibold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #DDDDDD;
+    color: #262626;
+    font-family: "SF Pro Display Regular", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+p {
+    margin: 0;
+}
+
+div.container {
+    width: 390px;
+    height: 764px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+nav.bottomNavBar {
+    width: 390px;
+    height: 48px;
+    position: absolute;
+    top: 714px;
+    padding-top: 1px;
+    border-top: 1px solid rgb(219, 219, 219);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottomNavBar div.tab {
+    width: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomNavBar div.tab .tabImg {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.bottomNavBar div.tab span.tabImg {
+    border-radius: 50%;
+    border: 1px solid rgb(219, 219, 219);
+    background-image: url("../images/profile-user.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section.igHome {
+    width: 390px;
+    height: 714px;
+}
+
+nav.topNavBar {
+    width: auto;
+    height: 30px;
+    padding: 20px 16px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNavBar img.igLogo {
+    width: 104px;
+    height: 30px;
+    cursor: pointer;
+}
+
+div.topNavMenu {
+    display: flex;
+}
+
+.topNavMenu img {
+    width: 24px;
+    height: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+main.homeMain {
+    width: 390px;
+    height: 652px;
+}
+
+.homeMain section.story {
+    width: 374px;
+    height: 84px;
+    padding: 8px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    display: flex;
+    gap: 12px;
+}
+
+section.story div.storyAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.ring {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(#C913B9, #F9373F, #FECD00);
+    border-radius: 50%;
+    position: relative;
+}
+
+div.storyAccount span.ringUser {
+    width: 64px;
+    height: 64px;
+    position: relative;
+}
+
+div.storyAccount img.addStory {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 110px;
+    left: 452px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+div.storyAccount span.accountProfile {
+    width: 56px;
+    height: 56px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 70px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+div#accountUser span.accountProfile {
+    background-image: url("../images/profile-user.jpg");
+}
+
+div#account1 span.accountProfile {
+    background-image: url("../images/profile-1.jpg");
+}
+
+div#account2 span.accountProfile {
+    background-image: url("../images/profile-2.jpg");
+}
+
+div#account3 span.accountProfile {
+    background-image: url("../images/profile-3.jpg");
+}
+
+div#account4 span.accountProfile {
+    background-image: url("../images/profile-4.jpg");
+}
+
+div.storyAccount p.accountName {
+    padding-top: 4px;
+    position: relative;
+}
+
+main.homeMain section.post {
+    width: 100%;
+    height: 553px;
+}
+
+section.post header.postHeader {
+    width: auto;
+    height: 36px;
+    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div.postHeaderGrid {
+    width: 200px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "pic name"
+        "pic place";
+}
+
+div.postHeaderGrid span.ring {
+    width: 36px;
+    height: 36px;
+    grid-area: pic;
+}
+
+div.postHeaderGrid span.profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid #ffffff;
+    background-image: url(../images/profile-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 171.5px;
+    margin-left: 1.5px;
+    cursor: pointer;
+    grid-area: pic;
+}
+
+div.postHeaderGrid p.accountName {
+    color: #000000;
+    font-family: "SF Pro Display Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+    grid-area: name;
+}
+
+div.postHeaderGrid img.accountOfficial {
+    padding-left: 3px;
+}
+
+div.postHeaderGrid p.postPlace {
+    font-size: 11px;
+    grid-area: place;
+}
+
+div.postHeaderMenu {
+    cursor: pointer;
+}
+
+section.post div.postContent {
+    width: 100%;
+    height: 390px;
+    background-image: url(../images/post-img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+div.postContent div.postContentPageCount {
+    width: 34px;
+    height: 26px;
+    margin-left: 342px;
+    margin-top: 14px;
+    background: rgba(18, 18, 18, 0.7);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.postContentPageCount p {
+    color: #F9F9F9;
+}
+
+section.post div.postMenu {
+    width: auto;
+    height: 24px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.postMenu img {
+    width: 24px;
+    height: 24px;
+}
+
+div.postMenu div.postMenuLeft {
+    width: 96px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+div.postMenu div.postMenuCenter {
+    width: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+div.postMenu div.postMenuRight {
+    width: 96px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.post footer.postDescription {
+    width: auto;
+    height: 66px;
+    padding: 2px 12px;
+}
+
+footer div.postLikes,
+footer div.postText {
+    padding: 2px 0;
+}
+
+footer div.postLikes p.likesCount,
+footer div.postText span.accountName {
+    color: #000000;
+    font-family: "SF Pro Display Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+footer div.postText span.textHide {
+    color: #6E6E6E;
+}
+
+footer div.postText p {
+    font-size: 13px;
+}
