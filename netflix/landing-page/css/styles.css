@@ -16,22 +16,22 @@ body {
 /* font */
 
 @font-face {
-    font-family: Netflix Sans Black;
+    font-family: "Netflix Sans Black";
     src: url(netflix-sans-font/netflixsans-black.ttf);
 }
 
 @font-face {
-    font-family: Netflix Sans Bold;
+    font-family: "Netflix Sans Bold";
     src: url(netflix-sans-font/NetflixSans-Bold.otf);
 }
 
 @font-face {
-    font-family: Netflix Sans Medium;
+    font-family: "Netflix Sans Medium";
     src: url(netflix-sans-font/NetflixSans-Medium.otf);
 }
 
 @font-face {
-    font-family: Netflix Sans Regular;
+    font-family: "Netflix Sans Regular";
     src: url(netflix-sans-font/NetflixSans-Regular.otf);
 }
 
@@ -123,7 +123,7 @@ body {
 .signup-form {
     display: inline-flex;
     justify-content: space-between;
-    width: 594px;
+    width: 578px;
     margin-top: 15px;
 }
 
@@ -136,7 +136,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     width: 360px;
-    height: 40px;
+    height: 56px;
     padding: 7px;
 }
 
@@ -169,6 +169,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 90px 160px;
+    margin: 0;
 }
 
 .col-text {
@@ -215,24 +216,27 @@ body {
     padding: 30px 0;
 }
 
-#faq h2 {
+#faq h1 {
     font-family: 'Netflix Sans Black', sans-serif;
     font-weight: 900;
     font-size: 3rem;
     margin-top: 30px;
 }
 
-.faq-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 560px;
-    margin: 20px 0 50px;
+.faq-accordion {
+    margin: 30px auto;
+    width: 980px;
 }
 
-.faq-dropdown {
-    width: 80%;
+.accordion-item {
+    border: 0;
+    border-image-width: 0;
+    margin-bottom: 8px;
+    background-color: rgb(45, 45, 45);
+    color: #ffffff;
+}
+
+.faq-question {
     height: 84px;
     border: 0;
     background-color: rgb(45, 45, 45);
@@ -245,12 +249,58 @@ body {
     cursor: pointer;
 }
 
-.faq-dropdown:hover {
+.faq-question:focus {
+    border: 0;
+    box-shadow: none;
+}
+
+.faq-question:not(.collapsed) {
+    background-color: rgb(45, 45, 45);
+    color: #ffffff;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    box-shadow: none;
+}
+
+.faq-question:hover {
     background-color: rgb(65, 65, 65);
+    box-shadow: none;
+}
+
+.faq-question::after {
+    background-image: url(../images/plus.png);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.faq-question:not(.collapsed)::after {
+    background-image: url(../images/plus.png);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 24px;
+    background-color: rgb(45, 45, 45);
+    color: #ffffff;
+}
+
+.faq-answer .accordion-body {
+    font-size: 23px;
+    text-align: left;
+    padding: 0;
+    line-height: normal;
+}
+
+.faq-answer .accordion-body a {
+    color: #ffffff;
 }
 
 .signup-div {
-    margin: 50px 0 60px;
+    margin: 50px 0 40px;
 }
 
 
@@ -326,8 +376,9 @@ a#hide {
         padding: 70px 40px;
     }
 
-    #faq .faq-dropdown {
-        width: 95%;
+    .faq-accordion {
+        margin: 30px 40px;
+        width: auto;
     }
 
     #footer {
@@ -419,20 +470,24 @@ a#hide {
 
     /* faq */
 
-    #faq h2 {
+    #faq h1 {
         font-family: 'Netflix Sans Bold', sans-serif;
         font-weight: 700;
         font-size: 2rem;
     }
 
-    .faq-column {
-        height: 470px;
+    .faq-accordion {
+        margin: 30px;
+        width: auto;
     }
 
-    .faq-dropdown {
+    .faq-question {
         font-size: 18px;
-        width: 93%;
         height: 70px;
+    }
+
+    .faq-answer .accordion-body {
+        font-size: 18px;
     }
 
     /* footer */
