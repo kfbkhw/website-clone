@@ -121,10 +121,10 @@ body {
 }
 
 .signup-form {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     width: 578px;
-    margin-top: 15px;
+    margin: 15px auto 0;
 }
 
 .signup-form input {
@@ -137,6 +137,7 @@ body {
     font-size: 1rem;
     width: 360px;
     height: 56px;
+    margin-right: 10px;
     padding: 7px;
 }
 
@@ -148,16 +149,14 @@ body {
     font-family: 'Netflix Sans Medium', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 24px;
     width: 210px;
     height: 56px;
 }
 
 .signup-form button i {
     font-size: 1.1rem;
+    position: relative;
+    bottom: 2px;
 }
 
 
@@ -366,7 +365,7 @@ a#hide {
 
 /* media */
 
-@media screen and (min-width: 960px) and (max-width: 1279px) {
+@media (min-width: 960px) and (max-width: 1279px) {
     #title .title-menu {
         display: flex;
         width: auto;
@@ -387,7 +386,7 @@ a#hide {
     }
 }
 
-@media screen and (max-width: 959px) {
+@media (max-width: 959px) {
 
     /* title */
 
@@ -410,7 +409,7 @@ a#hide {
     }
 
     .title-header {
-        margin: 100px 0;
+        margin: 100px 50px;
     }
 
     .title-header h1 {
@@ -507,4 +506,24 @@ a#hide {
         flex: 50%;
         margin-top: 16px;
     }
+}
+
+@media (max-width: 700px) {
+    .signup-div {
+        margin: 0 30px;
+    }
+
+    .signup-form {
+        width: auto;
+        margin: 15px 30px 0;
+    }
+
+    .signup-form input {
+        width: 100%;
+    }
+
+    .signup-form button {
+        min-width: 210px;
+    }
+
 }
