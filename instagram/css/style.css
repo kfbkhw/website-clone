@@ -132,7 +132,7 @@ div.storyAccount img.addStory {
     height: 18px;
     position: absolute;
     top: 110px;
-    left: 452px;
+    margin-left: 40px;
     border-radius: 50%;
     border: 2px solid #ffffff;
     cursor: pointer;
@@ -232,7 +232,7 @@ div.postHeaderGrid p.accountName {
 }
 
 div.postHeaderGrid img.accountOfficial {
-    padding-left: 3px;
+    padding-left: 1px;
 }
 
 div.postHeaderGrid p.postPlace {
