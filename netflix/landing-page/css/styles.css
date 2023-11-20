@@ -323,34 +323,23 @@ body {
 }
 
 .footer-table {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 0;
-    width: 90%;
-    height: 120px;
+    margin: 20px 0;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
+    gap: 12px;
 }
 
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.footer-col a {
+.footer-table a {
     font-size: 14px;
 }
 
-a#hide {
-    visibility: hidden;
-}
-
 .footer-name {
+    margin: 24px 0;
     color: rgba(255, 255, 255, 0.7);
     font-family: 'Netflix Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    padding-top: 24px;
 }
 
 .footer-info {
@@ -358,7 +347,7 @@ a#hide {
     font-family: 'Netflix Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 12px;
-    padding-top: 20px;
+    line-height: normal;
 }
 
 
@@ -382,7 +371,8 @@ a#hide {
 
     #footer {
         width: auto;
-        padding: 0 30px;
+        margin: 0;
+        padding: 60px 40px;
     }
 }
 
@@ -492,20 +482,16 @@ a#hide {
     /* footer */
 
     #footer {
-        width: 94%;
-        margin: 3% 3% 4%;
+        width: auto;
+        margin: 0;
+        padding: 20px 30px;
     }
 
     .footer-table {
-        flex-wrap: wrap;
-        height: 260px;
-        padding-top: 6px;
+        grid-template-rows: repeat(8, auto);
+        grid-template-columns: repeat(2, auto);
     }
 
-    .footer-col {
-        flex: 50%;
-        margin-top: 16px;
-    }
 }
 
 @media (max-width: 700px) {
